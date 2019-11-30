@@ -1,5 +1,5 @@
 import {EntityRepository, Repository} from 'typeorm';
-import {User} from '../user/user.entity';
+import {User} from '../users/users.entity';
 import {UserRegistrationDto} from './dto/user-registration.dto';
 import {ConflictException, InternalServerErrorException} from '@nestjs/common';
 import {UserLoginDto} from './dto/user-login.dto';

@@ -12,7 +12,7 @@ const jwtConfig = config.get('jwt');
 
 @Module({
   imports: [
-    PassportModule,
+    PassportModule.register({ defaultStrategy: 'jwt' }),
     JwtModule.register({
       secret: jwtConfig.secret,
       // signOptions: { expiresIn: '60s' },
